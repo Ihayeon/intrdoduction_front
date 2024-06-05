@@ -9,7 +9,7 @@ h3 {
   text-align: center;
   font-style: italic;
   font-weight: lighter;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 20px;
 }
 
@@ -91,6 +91,7 @@ h1 {
   text-align: center;
   font-weight: 400;
   font-family: "Pretendard-Thin";
+  color: rgb(227, 223, 223);
   font-size: 18px;
   line-height: 1.5;
   font-style: italic;
@@ -101,7 +102,7 @@ h1 {
   height: 300px;
   display: block;
   margin: 7vh 5vh;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .favorites {
@@ -118,7 +119,7 @@ h1 {
 
 .contact_img {
   text-align: center;
-  width: 40%;
+  width: 35%;
   height: auto;
   object-fit: cover;
 }
@@ -129,12 +130,13 @@ h1 {
 }
 .phone {
   font-size: 20px;
+  color: rgb(227, 223, 223);
 }
 .ct {
   margin-top: 80px;
   font-family: "Roboto Slab", serif;
   text-decoration: none;
-  color: rgb(33, 33, 33);
+  color: rgb(227, 223, 223);
   font-size: 50px;
   font-style: italic;
   margin: 35px;
