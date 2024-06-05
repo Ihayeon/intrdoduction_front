@@ -31,28 +31,8 @@ for (let el of lists) {
   let load = el.querySelector(".load");
 
   //play버튼 클릭 시,
-  play.addEventListener("click", (e) => {
-    let isActive = e.currentTarget.closest("article").classList.contains("on");
-    if (isActive) {
-      e.currentTarget
-        .closest("article")
-        .querySelector(".pic")
-        .classList.add("on");
-      e.currentTarget.closest("article").querySelector("audio").play();
-    }
-  });
 
   //pause버튼 클릭 시
-  pause.addEventListener("click", (e) => {
-    let isActive = e.currentTarget.closest("article").classList.contains("on");
-    if (isActive) {
-      e.currentTarget
-        .closest("article")
-        .querySelector(".pic")
-        .classList.remove("on");
-      e.currentTarget.closest("article").querySelector("audio").pause();
-    }
-  });
 
   //load버튼 클릭 시
   load.addEventListener("click", (e) => {
@@ -62,20 +42,11 @@ for (let el of lists) {
         .closest("article")
         .querySelector(".pic")
         .classList.add("on");
-      e.currentTarget.closest("article").querySelector("audio").load();
-      e.currentTarget.closest("article").querySelector("audio").play();
     }
   });
 }
 
 //모든 오디오 요소를 반복하면서 정지시키고 .pic 요소의 모션을 중지해서 초기화하는 함수
-function initMusic() {
-  for (let el of audio) {
-    el.pause();
-    el.load();
-    el.closest("article").querySelector(".pic").classList.remove("on");
-  }
-}
 
 //prev 버튼 클릭 시
 prev.addEventListener("click", () => {
@@ -93,7 +64,6 @@ prev.addEventListener("click", () => {
 //next 버튼 클릭시
 next.addEventListener("click", () => {
   //음악 초기화 함수 실행
-  initMusic();
 
   //num값을 감소시키며 frame을 45도 만큼 감소시키며 반시계 방향으로 회전
   num--;

@@ -7,65 +7,86 @@
 }
 
 body {
-  font-family: Arial;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
   background-color: rgb(201, 216, 245);
+  background-image: url("/imgs/cat.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the container */
+  height: 100vh;
+  padding-top: 50px; /* Add padding to push the content down a bit */
 }
 
 .container {
   width: 50%;
-  margin: 20px auto;
-  padding: 0px 20px 20px 20px;
-  background: #ddd;
-  box-shadow: 0 0 30px rgba(67, 79, 250, 0.5);
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(67, 79, 250, 0.3);
+  border-radius: 8px;
 }
 
-.container h1 {
+header {
   text-align: center;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 14px;
+  color: #666;
 }
 
 .todo-input {
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 10px;
   margin-bottom: 20px;
-  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
 .todos-container {
-  display: flex; /* Flexbox를 사용하여 가로배치 설정*/
-  flex-wrap: wrap; /* 요소들이 넘치는 경우 여러줄에 걸쳐 배치 */
-  gap: 10px; /*요소 사이의 간격 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .todo-item {
   background-color: #f4f4f4;
-  padding: 5px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  width: calc(33.33% - 7px);
+  padding: 10px;
+  font-size: 16px;
+  width: calc(33.33% - 10px);
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  word-wrap: break-word;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .todo-item:hover {
-  background-color: #ddd;
+  background-color: #e0e0e0;
 }
 
 .delete-btn {
   display: none;
   position: absolute;
-  top: 2px;
+  top: 5px;
   right: 5px;
   background-color: #ff4d4d;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 12px;
   cursor: pointer;
 }
 

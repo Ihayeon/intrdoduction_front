@@ -1,5 +1,9 @@
 body {
   background-color: #abdff1;
+  background-image: url("/imgs/carroad.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .list {

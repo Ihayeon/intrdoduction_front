@@ -1,5 +1,9 @@
 body {
   background-color: #e1dddb;
+  background-image: url("/imgs/contact.gif");
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .list {
@@ -34,6 +38,6 @@ body {
 .ct {
   margin: 0 40px;
   text-decoration: none;
-  color: black;
+  color: rgb(201, 216, 245);
   font-size: 50px;
 }
